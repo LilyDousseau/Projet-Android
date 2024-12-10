@@ -32,6 +32,7 @@ Cette application Android permet aux utilisateurs de visualiser et explorer des 
 - Clonez le dépôt : git clone https://github.com/username/event-management-app.git
 - Ouvrez le projet dans Android Studio
 - Synchronisez les dépendances dans le fichier build.gradle 
+- Ajoutez votre clé API dans la partie meta-data du fichier AndroidManifest.xml
 - Lancez l'application sur un émulateur ou un appareil physique
 
 ## 🚀 Utilisation
