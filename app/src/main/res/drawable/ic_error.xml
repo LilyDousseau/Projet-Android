@@ -1,0 +1,19 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Cercle rouge centré -->
+    <path
+        android:fillColor="#888888"
+        android:pathData="M54,2a52,52 0 1,1 0,104a52,52 0 1,1 0,-104" />
+
+    <!-- Symbole de croix blanche -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M34,34l40,40M74,34l-40,40"
+        android:strokeWidth="10"
+        android:strokeColor="#FFFFFF"
+        android:strokeLineCap="round" />
+</vector>

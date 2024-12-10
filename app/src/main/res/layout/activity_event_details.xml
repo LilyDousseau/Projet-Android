@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EventDetailsActivity">
+
+    <ImageView
+        android:id="@+id/a2_icon_img"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_error" />
+
+    <TextView
+        android:id="@+id/a2_icon_txv_title"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/a2_icon_img"
+        tools:text="Title" />
+
+    <TextView
+        android:id="@+id/a2_txv_address_name"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/a2_txv_place"
+        app:layout_constraintTop_toBottomOf="@id/a2_txv_description"
+        tools:text="Address Name" />
+
+    <TextView
+        android:id="@+id/a2_txv_date_contenu"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@id/a2_txv_date"
+        app:layout_constraintTop_toBottomOf="@id/a2_txv_address"
+        tools:text="Du .. au .." />
+
+    <TextView
+        android:id="@+id/a2_txv_price_contenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@id/a2_txv_price"
+        app:layout_constraintTop_toBottomOf="@id/a2_txv_date"
+        tools:text="Payant ou gratuit" />
+
+    <TextView
+        android:id="@+id/a2_txv_address"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@id/a2_txv_place"
+        app:layout_constraintTop_toBottomOf="@id/a2_txv_address_name"
+        tools:text="Address " />
+
+    <TextView
+        android:id="@+id/a2_txv_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Identifiant de l'évènement : "
+        android:textSize="10sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/a2_txv_price"
+        tools:text="Identifiant de l'évènement : " />
+
+    <TextView
+        android:id="@+id/a2_txv_id_contenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:textSize="10sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/a2_txv_id"
+        app:layout_constraintTop_toBottomOf="@+id/a2_txv_price"
+        tools:text="id" />
+
+    <ImageButton
+        android:id="@+id/a2_btn_fav"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/a2_icon_img"
+        app:srcCompat="@drawable/ic_star_empty" />
+
+    <TextView
+        android:id="@+id/a2_txv_description"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Descritption"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/a2_icon_txv_title" />
+
+    <TextView
+        android:id="@+id/a2_txv_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Lieu : "
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/a2_txv_description"
+        tools:text="Lieu : " />
+
+    <TextView
+        android:id="@+id/a2_txv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Dates : "
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/a2_txv_address"
+        tools:text="Dates : " />
+
+    <TextView
+        android:id="@+id/a2_txv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Prix : "
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/a2_txv_date"
+        tools:text="Prix : " />
+
+    <Button
+        android:id="@+id/a2_btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#018B9E"
+        android:text="Retour"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/a2_txv_id"
+        tools:text="Retour" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Contour de l'étoile -->
+    <path
+        android:strokeColor="#018B9E"
+        android:strokeWidth="4"
+        android:pathData="M54,5
+                         l14.9,30.3
+                         l33.4,4.8
+                         l-24.2,23.6
+                         l5.7,33.3
+                         l-29.8,-15.7
+                         l-29.8,15.7
+                         l5.7,-33.3
+                         l-24.2,-23.6
+                         l33.4,-4.8
+                         z" />
+</vector>

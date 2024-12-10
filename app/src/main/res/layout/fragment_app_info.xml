@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppInfoFragment">
+
+    <!-- Titre -->
+    <TextView
+        android:id="@+id/txt_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Informations générales sur l'application"
+        android:textAlignment="center"
+        android:textColor="#018B9E"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- URL des données -->
+    <TextView
+        android:id="@+id/txt_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="• URL des données"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_info" />
+
+    <TextView
+        android:id="@+id/txt_url_contenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:autoLink="web"
+        android:clickable="true"
+        android:justificationMode="inter_word"
+        android:text="https://opendata.paris.fr/explore/embed/dataset/que-faire-a-paris-/table/?disjunctive.tags&amp;disjunctive.address_name&amp;disjunctive.address_zipcode&amp;disjunctive.address_city&amp;disjunctive.pmr&amp;disjunctive.blind&amp;disjunctive.deaf&amp;disjunctive.price_type&amp;disjunctive.access_type&amp;disjunctive.programs"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_url" />
+
+    <!-- Description des données -->
+    <TextView
+        android:id="@+id/txt_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:text="• Explication des données"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_url_contenu" />
+
+    <TextView
+        android:id="@+id/txt_description_contenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:justificationMode="inter_word"
+        android:text="Les données affichées répertorient les différents évènements sur Paris. Chaque évènement contient, au minimum, un identifiant, un titre, une géolocalisation et une description."
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_description" />
+
+    <!-- Libraries Section with bullet points -->
+    <TextView
+        android:id="@+id/txt_libraries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:text="• Librairies utilisées"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_description_contenu" />
+
+    <!-- Licenses Section with bullet points -->
+    <TextView
+        android:id="@+id/txt_libraries_contenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:justificationMode="inter_word"
+        android:text="AndroidX Core KTX, AndroidX AppCompat, Material Components, AndroidX Activity, AndroidX ConstraintLayout, Retrofit, Retrofit Gson Converter, Google Play Services Maps, Glide, JUnit, AndroidX JUnit, Espresso Core"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_libraries" />
+
+    <TextView
+        android:id="@+id/txt_licenses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:text="• Licences"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_libraries_contenu" />
+
+    <TextView
+        android:id="@+id/txt_licenses_contenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Apache 2.0, BSD 2-Clause, Eclipse Public License 1.0"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_licenses" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
